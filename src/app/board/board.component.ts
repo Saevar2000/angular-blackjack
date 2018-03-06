@@ -74,8 +74,8 @@ export class BoardComponent implements OnInit {
   }
 
   anotherGame(): void {
-    this.gameInProgress = null;
-    this.disableStay = null;
+    this.gameInProgress = false;
+    this.disableStay = false;
     this.winner = null;
     this.hasBet = false;
     this.playerScore = 0;

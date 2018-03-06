@@ -22,9 +22,9 @@
       <div class="col-md-12">
         <h3>Player controls</h3>
           <input class="form-control" [(ngModel)]="amount" placeholder="Amount" aria-label="Username">       
-          <button class="btn btn-info" (click)="playerDrawCard()" disabled={{gameInProgress}}>Hit</button>
-          <button class="btn btn-success" (click)="playerStay()" disabled={{disableStay}}>Stay</button>
-          <button class="btn btn-primary" (click)="anotherGame()">Another game</button>
+          <button class="btn btn-info" (click)="playerDrawCard()" [disabled]="gameInProgress">Hit</button>
+          <button class="btn btn-success" (click)="playerStay()" [disabled]="disableStay">Stay</button>
+          <button class="btn btn-primary" (click)="anotherGame()" [disabled]="!disableStay">Another game</button>
       </div>
     </div>
   </div>
